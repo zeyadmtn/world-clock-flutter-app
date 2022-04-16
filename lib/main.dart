@@ -15,16 +15,25 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[800],
       ),
-      body: Center(
-          child: ElevatedButton.icon(
-        onPressed: null,
-        icon: Icon(Icons.alternate_email),
-        label: Text('Send Mail'),
-        style: ButtonStyle(
-          backgroundColor: MaterialStateProperty.all(Colors.red[800]),
-          foregroundColor: MaterialStateProperty.all(Colors.white)
-        ),
-      )),
+      body: Column(
+        children: <Widget>[
+          Container(
+            padding: EdgeInsets.all(20),
+            color: Colors.cyan,
+            child: Text('one')
+          ),
+          Container(
+            padding: EdgeInsets.all(30),
+            color: Colors.pinkAccent,
+            child: Text('one')
+          ),
+          Container(
+            padding: EdgeInsets.all(40),
+            color: Colors.amber,
+            child: Text('one')
+          ),
+        ],
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed: null,
         child: Text('+'),
